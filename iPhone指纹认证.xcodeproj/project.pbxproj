@@ -15,6 +15,8 @@
 		3EE6AB06205A6D91009CC472 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE6AB05205A6D91009CC472 /* main.m */; };
 		3EE6AB10205A6D91009CC472 /* iPhone____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE6AB0F205A6D91009CC472 /* iPhone____Tests.m */; };
 		3EE6AB1B205A6D91009CC472 /* iPhone____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE6AB1A205A6D91009CC472 /* iPhone____UITests.m */; };
+		3EE6AB29205A6F8E009CC472 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EE6AB28205A6F8D009CC472 /* Images.xcassets */; };
+		3EE6AB2D205A7018009CC472 /* YZAuthID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE6AB2C205A7018009CC472 /* YZAuthID.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		3EE6AB16205A6D91009CC472 /* iPhone指纹认证UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iPhone指纹认证UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE6AB1A205A6D91009CC472 /* iPhone____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "iPhone____UITests.m"; sourceTree = "<group>"; };
 		3EE6AB1C205A6D91009CC472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EE6AB28205A6F8D009CC472 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3EE6AB2B205A7018009CC472 /* YZAuthID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZAuthID.h; sourceTree = "<group>"; };
+		3EE6AB2C205A7018009CC472 /* YZAuthID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZAuthID.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +106,13 @@
 		3EE6AAF5205A6D91009CC472 /* iPhone指纹认证 */ = {
 			isa = PBXGroup;
 			children = (
+				3EE6AB2A205A7001009CC472 /* CJAuthID */,
 				3EE6AAF6205A6D91009CC472 /* AppDelegate.h */,
 				3EE6AAF7205A6D91009CC472 /* AppDelegate.m */,
 				3EE6AAF9205A6D91009CC472 /* ViewController.h */,
 				3EE6AAFA205A6D91009CC472 /* ViewController.m */,
 				3EE6AAFC205A6D91009CC472 /* Main.storyboard */,
+				3EE6AB28205A6F8D009CC472 /* Images.xcassets */,
 				3EE6AAFF205A6D91009CC472 /* Assets.xcassets */,
 				3EE6AB01205A6D91009CC472 /* LaunchScreen.storyboard */,
 				3EE6AB04205A6D91009CC472 /* Info.plist */,
@@ -130,6 +137,15 @@
 				3EE6AB1C205A6D91009CC472 /* Info.plist */,
 			);
 			path = "iPhone指纹认证UITests";
+			sourceTree = "<group>";
+		};
+		3EE6AB2A205A7001009CC472 /* CJAuthID */ = {
+			isa = PBXGroup;
+			children = (
+				3EE6AB2B205A7018009CC472 /* YZAuthID.h */,
+				3EE6AB2C205A7018009CC472 /* YZAuthID.m */,
+			);
+			path = CJAuthID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EE6AB03205A6D91009CC472 /* LaunchScreen.storyboard in Resources */,
+				3EE6AB29205A6F8E009CC472 /* Images.xcassets in Resources */,
 				3EE6AB00205A6D91009CC472 /* Assets.xcassets in Resources */,
 				3EE6AAFE205A6D91009CC472 /* Main.storyboard in Resources */,
 			);
@@ -268,6 +285,7 @@
 				3EE6AAFB205A6D91009CC472 /* ViewController.m in Sources */,
 				3EE6AB06205A6D91009CC472 /* main.m in Sources */,
 				3EE6AAF8205A6D91009CC472 /* AppDelegate.m in Sources */,
+				3EE6AB2D205A7018009CC472 /* YZAuthID.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YU9B9Q59KM;
 				INFOPLIST_FILE = "iPhone指纹认证/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "caojicom.com.iPhone----";
@@ -444,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YU9B9Q59KM;
 				INFOPLIST_FILE = "iPhone指纹认证/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "caojicom.com.iPhone----";
